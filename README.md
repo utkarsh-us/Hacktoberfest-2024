@@ -20,7 +20,7 @@ Welcome to our project! We appreciate your interest and contributions. Please re
    - Clone the forked repository to your local machine.
 
    ```bash
-   git clone https://github.com/aitr-hacktoberfest2024.git
+   git clone https://github.com/Hacktoberfest-2024.git
    ```
 
 3. **Navigate to the Project Directory:**
@@ -63,7 +63,7 @@ To keep your fork up-to-date with the main repository and avoid conflicts:
 1. **Add Upstream Remote:**
 
    ```bash
-   git remote add upstream https://github.com/aitr-hacktoberfest2024.git
+   git remote add upstream https://github.com/Hacktoberfest-2024.git
    ```
 
 2. **Verify the New Remote:**
