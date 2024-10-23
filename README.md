@@ -26,7 +26,7 @@ Welcome to our project! We appreciate your interest and contributions. Please re
 3. **Navigate to the Project Directory:**
 
    ```bash
-   cd hacktoberfest2024
+   cd Hacktoberfest-2024
    ```
 
 4. **Create a New Branch:**
