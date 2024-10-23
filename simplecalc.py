@@ -19,21 +19,26 @@ def calculate_bmi(weight, height):
     return round(bmi, 2)
 
 def graph_linear_equation(slope, intercept):
-    import matplotlib.pyplot as plt
-    import numpy as np
+    try:
+        import matplotlib.pyplot as plt
+        import numpy as np
 
-    x = np.linspace(-10, 10, 100)  # Generate x values from -10 to 10
-    y = slope * x + intercept  # Calculate corresponding y values
+        x = np.linspace(-10, 10, 100)  # Generate x values from -10 to 10
+        y = slope * x + intercept  # Calculate corresponding y values
 
-    plt.plot(x, y, label=f'y = {slope}x + {intercept}')
-    plt.axhline(0, color='black', lw=1)  # Add x-axis
-    plt.axvline(0, color='black', lw=1)  # Add y-axis
-    plt.title('Graph of Linear Equation')
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.grid()
-    plt.legend()
-    plt.show()
+        plt.plot(x, y, label=f'y = {slope}x + {intercept}')
+        plt.axhline(0, color='black', lw=1)  # Add x-axis
+        plt.axvline(0, color='black', lw=1)  # Add y-axis
+        plt.title('Graph of Linear Equation')
+        plt.xlabel('x')
+        plt.ylabel('y')
+        plt.grid()
+        plt.legend()
+        plt.show()
+    except ImportError:
+        print("Error: matplotlib is not installed. Please install it using 'pip install matplotlib'.")
+    except Exception as e:
+        print(f"An error occurred while plotting the graph: {e}")
 
 def main():
     print("Welcome to the Simple Calculator")
