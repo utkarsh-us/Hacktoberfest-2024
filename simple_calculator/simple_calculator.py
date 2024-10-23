@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def arithmetic_operations():
+    
     operation = input("Choose an operation (+, -, *, /): ")
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
