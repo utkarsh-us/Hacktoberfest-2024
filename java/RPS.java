@@ -15,12 +15,15 @@ public class RPS {
                 break;
             }
 
-            if (!userMove.equalsIgnoreCase("Rock") && !userMove.equalsIgnoreCase("Paper") && !userMove.equalsIgnoreCase("Scissors")) {
+            if (!userMove.equalsIgnoreCase("Rock") && 
+                !userMove.equalsIgnoreCase("Paper") && 
+                !userMove.equalsIgnoreCase("Scissors")) {
                 System.out.println("Invalid move, please try again.");
                 continue;
             }
 
-            int computerMoveIndex = random.nextInt(3);
+            // Use rps.length instead of 3 for flexibility
+            int computerMoveIndex = random.nextInt(rps.length);
             String computerMove = rps[computerMoveIndex];
 
             System.out.println("Computer move: " + computerMove);
